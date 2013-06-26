@@ -7,9 +7,11 @@
   
   <properties>
     <spring.version>3.2.3.RELEASE</spring.version>
+    <hibernate.version>4.2.2.Final</hibernate.version>
   </properties>
   
   <dependencies>
+  	<!-- Spring -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
@@ -20,6 +22,15 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    
+    <!-- Hibernate -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    
+    <!-- Java EE -->
     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
