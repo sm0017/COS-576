@@ -15,7 +15,7 @@ public class PizzaDAO {
 	
 	/**
 	 * @Transactional annotation below will trigger Spring Hibernate transaction manager to automatically create
-	 * a hibernate session. See src/main/webapp/servlet-context.xml
+	 * a hibernate session. See src/main/webapp/WEB-INF/servlet-context.xml
 	 */
 	@Transactional
 	public List<Pizza> findAll() {
