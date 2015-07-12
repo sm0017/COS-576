@@ -1,0 +1,29 @@
+<%-- Icon license: http://pcunleashed.com/download/icon-sets/ --%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
+<c:url var="imagesUrl" value="/images/student.jpg" />
+<c:url var="bookslogoUrl" value="/images/books.jpg" />
+
+<div class="photoPanel yui-gb">
+	
+	<div class="yui-u">
+		<div class="photoItem">
+			<div class="photoItemPhoto"><img src="${imagesUrl}" /></div>
+			<div class="photoItemTitle"></div>
+			<div class="photoItemText">
+				<p>Study</p>
+			</div>
+		</div>
+	</div>
+	<div class="yui-u">
+		<div class="photoItem">
+			<div class="photoItemPhoto"><img src="${bookslogoUrl}" /></div>
+			<div class="photoItemTitle"></div>
+			<div class="photoItemText">
+				<p>Courses</p>
+			</div>
+		</div>
+	</div>
+</div>

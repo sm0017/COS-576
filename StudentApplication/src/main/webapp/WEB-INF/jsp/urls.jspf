@@ -1,0 +1,5 @@
+<c:url var="homeUrl" value="/" />
+<c:url var="studentListUrl" value="/students.html" />
+<c:url var="newStudentUrl" value="/students/new.html" />
+<c:url var="courseListUrl" value="/courses.html" />
+<c:url var="newCourseUrl" value="/courses/new.html" />

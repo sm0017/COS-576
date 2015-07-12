@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+						http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+						http://www.springframework.org/schema/beans
+		 				http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-3.2.xsd
+						http://www.springframework.org/schema/util 
+						http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:viewClass="org.springframework.web.servlet.view.JstlView"
+	
+		p:prefix="/WEB-INF/jsp/"
+		p:suffix=".jsp"/>
+
+
+
+		<bean id="messageSource"
+			class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
+			p:basename="classpath:/spring/message">
+		</bean>
+		<util:map id="viewNames">
+			<entry key="studentList" value="studentList" />
+			<entry key="studentForm" value="studentForm" />
+			<entry key="createStudentSuccess" value="redirect:/students.html?saved=true" />
+			<entry key="updateStudentSuccess" value="redirect:/students.html?saved=true" />
+			<entry key="deleteStudentSuccess" value="redirect:/students.html?deleted=true" />
+			<entry key="studentSerp" value="studentSerp" />
+			
+			<entry key="courseList" value="courseList" />
+			<entry key="courseForm" value="courseForm" />
+			<entry key="createCourseSuccess" value="redirect:/courses.html?saved=true" />
+			<entry key="updateCourseSuccess" value="redirect:/courses.html?saved=true" />
+			<entry key="deleteCourseSuccess" value="redirect:/courses.html?deleted=true" />
+			<entry key="courseSerp" value="courseSerp" />
+			
+			
+			
+			
+		</util:map>
+
+
+		<context:component-scan base-package="com.cos576.Hw1.web"></context:component-scan>
+		<mvc:default-servlet-handler />
+		<mvc:annotation-driven></mvc:annotation-driven>
+		<mvc:view-controller path="" view-name="/home" />
+
+</beans>
