@@ -1,0 +1,4 @@
+
+<c:url var="homeUrl" value="/home.html" />
+<c:url var="registerUrl" value="/users/new.html" />
+<c:url var="courseRegisterUrl" value="/courses/new.html" />
