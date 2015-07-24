@@ -65,6 +65,12 @@
 	           	<h:outputText />
 	           	<h:inputText styleClass="collectedBy" autocomplete="off" id="collectedBy" value="#{locationCrud.item.collectedBy}" converter="#{fieldWorkerExtIdConverter}"/>
 	           	<h:message for="collectedBy" errorClass="error" errorStyle="color: red" infoStyle="color: green"/>
+			
+				<h:outputText value="#{msg.locationState}:"/>
+                <h:outputText />
+                <h:inputText id="state" value="#{locationCrud.item.state}" converter="#{defaultConverter}" />
+                <h:message for="state" errorClass="error" errorStyle="color: red" infoStyle="color: green"/>      
+			
 			</h:panelGrid>
 	        <script>document.getElementById('form:level').focus();</script>
 	        <br />

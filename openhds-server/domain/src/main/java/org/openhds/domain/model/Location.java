@@ -70,10 +70,15 @@ public class Location
 
     @Description(description = "The altitude for the Location")
     private String altitude;
+    
+    @Description(description = "The state for the Location")
+    private String state;
+    
 
     @OneToMany(targetEntity = org.openhds.domain.model.Residency.class)
     @JoinColumn(name = "location_uuid")
     private List<Residency> residencies = new ArrayList<Residency>();
+    
 
     // Extensions for bioko island project
     @Description(description = "The number of this building within a sector")
@@ -231,8 +236,16 @@ public class Location
     public void setMapAreaName(String mapAreaName) {
         this.mapAreaName = mapAreaName;
     }
+    
+    public String getState() {
+		return state;
+	}
 
-    public String getBuildingNumber() { return buildingNumber; }
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getBuildingNumber() { return buildingNumber; }
 
     public void setBuildingNumber(String buildingNumber) { this.buildingNumber = buildingNumber; }
 

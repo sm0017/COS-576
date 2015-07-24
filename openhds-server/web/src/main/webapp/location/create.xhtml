@@ -72,7 +72,14 @@
 	                        <h:outputText value="#{msg.fieldWorkerId}:"/>
 	                        <h:outputText />
 	                        <h:inputText styleClass="collectedBy" autocomplete="off" id="collectedBy" value="#{locationCrud.item.collectedBy}" converter="#{fieldWorkerExtIdConverter}"/>
-	                        <h:message for="collectedBy" errorClass="error" errorStyle="color: red" infoStyle="color: green"/>      
+	                        <h:message for="collectedBy" errorClass="error" errorStyle="color: red" infoStyle="color: green"/> 
+	                        
+	                        <!-- Smita -->
+	                        <h:outputText value="#{msg.locationState}:"/>
+	                        <h:outputText />
+	                        <h:inputText id="state" value="#{locationCrud.item.state}" converter="#{defaultConverter}" />
+	                        <h:message for="state" errorClass="error" errorStyle="color: red" infoStyle="color: green"/>
+	                             
 	                    </h:panelGrid>
 	                </td>
 	           	</tr>
