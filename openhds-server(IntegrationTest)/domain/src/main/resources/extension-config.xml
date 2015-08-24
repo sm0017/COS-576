@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><config>
+	<entity name="Location">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="Individual">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="SocialGroup">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="Visit">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="Death">
+		<attributes>
+		</attributes>
+	</entity>
+		<entity name="PregnancyObservation">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="InMigration">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="OutMigration">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="Vaccination">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="AdultVPM">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="NeoNatalVPM">
+		<attributes>
+		</attributes>
+	</entity>
+	<entity name="PostNeoNatalVPM">
+		<attributes>
+		</attributes>
+	</entity>
+</config>
