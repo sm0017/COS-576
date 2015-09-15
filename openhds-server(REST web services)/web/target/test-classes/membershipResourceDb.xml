@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This data set taken from web openhds-required-data.sql -->
+<dataset>
+	<privilege uuid="PRIVILEGE1" privilege="CREATE_ENTITY" />
+	<role uuid="ROLE1" name="ADMINISTRATOR" description="Administrator of OpenHDS"
+		deleted="false" />
+	<role_privileges role_uuid="ROLE1" privilege_uuid="PRIVILEGE1" />
+
+	<user uuid="User 1" firstName="OpenHDS" lastName="Administrator"
+		fullName="Administrator" description="Administrator User" username="admin"
+		password="test" lastLoginTime="0" deleted="false" />
+	<user_roles user_uuid="User 1" role_uuid="ROLE1" />
+
+
+	<locationhierarchylevel uuid="HierarchyLevel1"
+		keyIdentifier="1" name="Level 1" />
+	<locationhierarchylevel uuid="HierarchyLevel2"
+		keyIdentifier="2" name="Level 2" />
+	<locationhierarchylevel uuid="HierarchyLevel3"
+		keyIdentifier="3" name="Level 3" />
+
+	<locationhierarchy uuid="hierarchy1" name="TAN"
+		extId="TAN" level_uuid="HierarchyLevel1" parent_uuid="hierarchy_root" />
+	<locationhierarchy uuid="hierarchy2" name="IFA"
+		extId="IFA" level_uuid="HierarchyLevel2" parent_uuid="hierarchy1" />
+	<locationhierarchy uuid="hierarchy3" name="IFB"
+		extId="IFB" level_uuid="HierarchyLevel3" parent_uuid="hierarchy2" />
+
+	<fieldworker uuid="FieldWorker1" extId="FWEK1D" firstname="Editha"
+		lastname="Kaweza" deleted="0" />
+
+	<individual uuid="Indiv 4" deleted="0" insertDate="2012-03-19"
+		voidReason="" status="A" dob="2000-01-03" extId="MBI000001004"
+		firstName="Jessica" gender="F" lastName="Marsh" insertBy_uuid="User 1"
+		collectedBy_uuid="FieldWorker1" />
+	
+	<location uuid="LOCATION1" extId="testLocation" locationName="Test Location" locationType="RUR" insertDate="2000-04-17" deleted="false" collectedBy_uuid="FieldWorker1"
+              insertBy_uuid="User 1" status="P" />
+	
+	<individual uuid="Indiv 1" deleted="0" insertDate="2010-03-19"
+		voidReason="" status="A" dob="1987-01-03" extId="MBI000001005"
+		firstName="Jess" gender="F" lastName="Marsha" insertBy_uuid="User 1"
+		collectedBy_uuid="FieldWorker1" />
+
+	<socialgroup uuid="SocialGroup1" deleted="0"
+		insertDate="2012-04-17 00:00:00" status="P" extId="MBI00000100"
+		groupName="Harold" groupType="FAM" insertBy_uuid="User 1"
+		collectedBy_uuid="FieldWorker1" groupHead_uuid="Indiv 1" />
+
+	<membership uuid="memebership1" insertDate="2012-04-17"
+		bIsToA="1"  individual_uuid="Indiv 1" deleted="0"  insertBy_uuid="User 1" collectedBy_uuid="FieldWorker1" startDate="2010-10-10"/>
+
+
+</dataset>
