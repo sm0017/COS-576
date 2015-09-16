@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Export-Package: org.motechproject.helloworld;version="0.0.1.SNAPSHOT"
+Blueprint-Enabled: true
+Built-By: smitatm
+Tool: Bnd-1.43.0
+Bundle-Name: Hello World
+Created-By: Apache Maven Bundle Plugin
+Context-File: META-INF/spring/blueprint.xml
+Build-Jdk: 1.7.0_79
+Resource-Path: helloworld/resources
+Bundle-Version: 0.0.1.SNAPSHOT
+Context-Path: helloworld
+Bnd-LastModified: 1442347551011
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.motechproject.motech-hello-world-tutorial
+Import-Package: org.motechproject.event;version="[1.0,2)",org.motechpr
+ oject.event.listener;version="[1.0,2)",org.motechproject.event.listen
+ er.annotations;version="[1.0,2)",org.motechproject.osgi.web;version="
+ [1.0,2)",org.slf4j;version="[1.7,2)",org.springframework.beans.factor
+ y.annotation;version="[3.1,4)",org.springframework.stereotype;version
+ ="[3.1,4)",org.springframework.web.bind.annotation;version="[3.1,4)"
+
