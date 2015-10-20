@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <h1>Locations</h1>
+
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Location Ext ID</th>
+                    <th>Location Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="location in locations">
+                    <td>{{location.extId}}</td>
+                    <td>{{location.locationName}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
