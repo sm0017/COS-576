@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_spring_roo_domain_Talk" modelAttribute="talk" path="/talks" render="${empty dependencies}" z="5uuJ4W86VkjyHS2UZ7p2z/lD+nQ=">
+        <field:input field="title" id="c_com_spring_roo_domain_Talk_title" required="true" z="kyllO4TPQ/VLW5Hropy9CWp/ojk="/>
+        <field:textarea field="description" id="c_com_spring_roo_domain_Talk_description" required="true" z="9PY7xPVPs2PUxjQFQDqbFkfmC+I="/>
+        <field:select field="speaker" id="c_com_spring_roo_domain_Talk_speaker" itemValue="id" items="${speakers}" path="/speakers" required="true" z="L+aQTuNLGmuAFmCDt6La6B3FU3I="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_spring_roo_domain_Talk" render="${not empty dependencies}" z="azZBQJbUXCExnLJpBn5ZqjykFRs="/>
+</div>

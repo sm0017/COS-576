@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_spring_roo_domain_Speaker" items="${speakers}" z="BBxxnXabKPLeg9AksJePChMSSnM=">
+        <table:table data="${speakers}" id="l_com_spring_roo_domain_Speaker" path="/speakers" z="F3/U9JGaTuC8WPIZBOqmlQzf5Es=">
+            <table:column id="c_com_spring_roo_domain_Speaker_lastname" property="lastname" z="elrjf6feTZSG6UCUpiVDcS3CqLM="/>
+            <table:column id="c_com_spring_roo_domain_Speaker_firstname" property="firstname" z="6k9i5N/lK/KQNG5X/NUyH3hoykI="/>
+            <table:column id="c_com_spring_roo_domain_Speaker_email" property="email" z="Dalh3v6ld9ShwAgrHsexKPt8/UA="/>
+            <table:column id="c_com_spring_roo_domain_Speaker_organization" property="organization" z="2dxrpITKqaDu1/5jnDQfyZJaY7M="/>
+            <table:column date="true" dateTimePattern="${speaker_birthdate_date_format}" id="c_com_spring_roo_domain_Speaker_birthdate" property="birthdate" z="4DFVE78nrEbnJHrv3Wz8X1ms6AE="/>
+            <table:column id="c_com_spring_roo_domain_Speaker_age" property="age" z="MtM2LSDDwuwIN2tTeWa/WCtbbhI="/>
+        </table:table>
+    </page:list>
+</div>

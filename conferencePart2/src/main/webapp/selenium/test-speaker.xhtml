@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<link href="http://localhost:8080/" rel="selenium.base"/>
+<title>Selenium test for SpeakerController</title>
+</head>
+<body>
+    <table border="1" cellpadding="1" cellspacing="1">
+        <thead>
+            <tr>
+                <td colspan="3" rowspan="1">Selenium test for SpeakerController</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                    <td>open</td>
+                    <td>http://localhost:8080/conference/speakers?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_lastname_id</td>
+                    <td>someLastname1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_firstname_id</td>
+                    <td>someFirstname1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_email_id</td>
+                    <td>some@email.com</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_organization_id</td>
+                    <td>someOrganization1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_birthdate_id</td>
+                    <td>Sep 19, 2014</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_age_id</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>clickAndWait</td>
+                    <td>//input[@id = 'proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_com_spring_roo_domain_Speaker_lastname_lastname_id</td>
+                    <td>someLastname1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_com_spring_roo_domain_Speaker_firstname_firstname_id</td>
+                    <td>someFirstname1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_com_spring_roo_domain_Speaker_email_email_id</td>
+                    <td>some@email.com</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_com_spring_roo_domain_Speaker_organization_organization_id</td>
+                    <td>someOrganization1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_com_spring_roo_domain_Speaker_birthdate_birthdate_id</td>
+                    <td>Sep 19, 2014</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_com_spring_roo_domain_Speaker_age_age_id</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>

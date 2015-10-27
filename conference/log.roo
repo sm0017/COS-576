@@ -1,0 +1,23 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2015-10-20 18:39:16
+project --topLevelPackage com.spring.roo --java 7 --projectName conference
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class ~.domain.Speaker --testAutomatically 
+entity jpa --class ~.domain.Talk --testAutomatically 
+hint 
+field string --fieldName lastname --class ~.domain.Speaker --notNull 
+field string --fieldName firstname --class ~.domain.Speaker --notNull 
+field string --fieldName email --unique --notNull 
+field string --fieldName organization
+field date --fieldName birthdate --type java.util.Date --past --notNull 
+field number --type java.lang.Long --fieldName age --min 25 --max 60
+field string --fieldName title --class ~.domain.Talk --notNull 
+field string --fieldName description --notNull --sizeMax 4000
+field set --fieldName talks --type ~.domain.Talk --class ~.domain.Speaker --cardinality ONE_TO_MANY 
+field reference --fieldName speaker --type ~.domain.Speaker --class ~.domain.Talk --notNull
+controller all --package ~.web
+logging setup --level INFO --package ALL_SPRING 
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2015-10-20 18:58:24
+perform tests
+q
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2015-10-20 19:00:47
+perform test
