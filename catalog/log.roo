@@ -1,0 +1,53 @@
+project --topLevelPackage com.dw.roo.catalog --java 7 --projectName catalog
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa  --class ~.domain.Instructor --testAutomatically
+entity jpa --class ~.domain.Course --testAutomatically 
+entity jpa --class ~.domain.Student --testAutomatically 
+focus --class ~.domain.Instructor
+field string --fieldName firstname --notNull 
+field string --fieldName lastname --notNull
+field string --fieldName email --unique --notNull
+focus --class ~.domain.Course
+field string --fieldName courseName  --notNull 
+field string --fieldName description --notNull --sizeMax 4000
+field date --fieldName startdate --type java.util.Date --notNull --class ~.domain.Course
+field date --fieldName enddate --type java.util.Date --notNull --future --class ~.domain.Course
+field set --fieldName courses --type ~.domain.Course --class ~.domain.Instructor --cardinality ONE_TO_MANY 
+field reference --fieldName instrctor  --type ~.domain.Instructor --class ~.domain.Course --notNull 
+focus --class ~.domain.Student
+field string --fieldName StudentName --notNull 
+field string --fieldName email --unique --notNull
+field reference --fieldName course  --type ~.domain.Course --class ~.domain.Student 
+field set --fieldName courses --type ~.domain.Course --class ~.domain.Student --cardinality ONE_TO_MANY
+web mvc setup
+web mvc all --package ~.web
+
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2015-10-26 22:42:39
+project --topLevelPackage com.dw.roo.catalog --java 7 --projectName catalog
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa  --class ~.domain.Instructor --testAutomatically
+entity jpa --class ~.domain.Course --testAutomatically 
+entity jpa --class ~.domain.Student --testAutomatically 
+focus --class ~.domain.Instructor
+field string --fieldName firstname --notNull 
+field string --fieldName lastname --notNull
+field string --fieldName email --unique --notNull
+focus --class ~.domain.Course
+field string --fieldName courseName  --notNull 
+field string --fieldName description --notNull --sizeMax 4000
+field date --fieldName startdate --type java.util.Date --notNull --class ~.domain.Course
+field date --fieldName enddate --type java.util.Date --notNull --future --class ~.domain.Course
+field set --fieldName courses --type ~.domain.Course --class ~.domain.Instructor --cardinality ONE_TO_MANY 
+field reference --fieldName instrctor  --type ~.domain.Instructor --class ~.domain.Course --notNull 
+focus --class ~.domain.Student
+field string --fieldName StudentName --notNull 
+field string --fieldName email --unique --notNull
+field reference --fieldName course  --type ~.domain.Course --class ~.domain.Student 
+field set --fieldName courses --type ~.domain.Course --class ~.domain.Student --cardinality ONE_TO_MANY
+web mvc setup
+web mvc all --package ~.web
+// script --file log.roo
+security setup
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2015-10-26 22:54:26
+q
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2015-10-26 23:30:24

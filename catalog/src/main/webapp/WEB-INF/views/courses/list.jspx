@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_dw_roo_catalog_domain_Course" items="${courses}" z="/bg4b7ie3nTZWZR5e3+vsjc65Gc=">
+        <table:table data="${courses}" id="l_com_dw_roo_catalog_domain_Course" path="/courses" z="NEMpvqH5IHOKd9QQuobGQa8bCXU=">
+            <table:column id="c_com_dw_roo_catalog_domain_Course_courseName" property="courseName" z="MQVSYE6TadvhU2iiP1UBGSJ4B3Y="/>
+            <table:column id="c_com_dw_roo_catalog_domain_Course_description" property="description" z="nRwMTlXqk4b9AUn6PtDL2Fvz3pM="/>
+            <table:column date="true" dateTimePattern="${course_startdate_date_format}" id="c_com_dw_roo_catalog_domain_Course_startdate" property="startdate" z="BVdZ54UKim2375myyb++ft0NDWI="/>
+            <table:column date="true" dateTimePattern="${course_enddate_date_format}" id="c_com_dw_roo_catalog_domain_Course_enddate" property="enddate" z="Es0J8Y1X5fKE2qycpDrXu0oukvM="/>
+            <table:column id="c_com_dw_roo_catalog_domain_Course_instrctor" property="instrctor" z="EK28PzTKghRUVAeVzfoUyKfHua8="/>
+        </table:table>
+    </page:list>
+</div>

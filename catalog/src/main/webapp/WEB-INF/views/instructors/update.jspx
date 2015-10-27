@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_dw_roo_catalog_domain_Instructor" modelAttribute="instructor" path="/instructors" versionField="Version" z="uAKQWHqKLEKTM9s8Im4vscPkOus=">
+        <field:input field="firstname" id="c_com_dw_roo_catalog_domain_Instructor_firstname" required="true" z="i7lnQ6MHj51uja13JTjz89V2i40="/>
+        <field:input field="lastname" id="c_com_dw_roo_catalog_domain_Instructor_lastname" required="true" z="+D85gOk5jG5PoSACdfb7xXldcnQ="/>
+        <field:input field="email" id="c_com_dw_roo_catalog_domain_Instructor_email" required="true" validationMessageCode="field_invalid_email" z="yLqwi1x4td9sMCEHDVc4hTgJsFo="/>
+        <field:simple field="courses" id="c_com_dw_roo_catalog_domain_Instructor_courses" messageCode="entity_reference_not_managed" messageCodeAttribute="Course" z="NXICoNt6ZrHij3GaCHaSJaHvUlg="/>
+    </form:update>
+</div>
